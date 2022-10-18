@@ -10,6 +10,9 @@ const client = new Client({
   ]
 });
 
-client.once('ready', () => console.log(client.user.tag, 'conectado.'));
+client.once('ready', () => {
+  console.log(client.user.tag, 'conectado.');
+  console.log('Hello world!');
+});
 
 client.login(process.env.TOKEN);
